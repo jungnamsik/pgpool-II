@@ -36,6 +36,6 @@ sudo mkdir /var/run/pgpool
 sudo chown postgres:postgres /var/run/pgpool
 
 
-#@=====[pgpool pid, socket ]
+#@=====[ /etc/sysconfig/pgpool 옵션 변경]
 sed -i -e "/^OPTS=/d" /etc/sysconfig/pgpool
 echo 'OPTS=" -D -n"' >> /etc/sysconfig/pgpool

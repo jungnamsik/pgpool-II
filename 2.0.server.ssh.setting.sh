@@ -1,4 +1,5 @@
 # as postgres
+#@=====[postgres ssh 설정]
 
 ssh-keygen -t rsa
 ssh-copy-id postgres@pg01

@@ -23,28 +23,6 @@ sudo systemctl restart postgresql
 repmgr -f /etc/repmgr/12/repmgr.conf -v master register --force
 
 
-
-
-psql -U repmgr -c "truncate table repmgr.events             "
-psql -U repmgr -c "truncate table repmgr.monitoring_history "
-psql -U repmgr -c "truncate table repmgr.nodes              "
-psql -U repmgr -c "truncate table repmgr.voting_term        "
-
-
-psql -c "drop extension pgpool_recovery;" -d template1
-psql -c "drop extension pgpool_adm;"
-
-psql -c "create extension pgpool_recovery;" -d template1
-psql -c "create extension pgpool_adm;"
-
-truncate table repmgr.events             ;
-truncate table repmgr.monitoring_history ;
-truncate table repmgr.nodes              ;
-truncate table repmgr.voting_term        ;
-
-
-
-
 ip_w.sh addr add 192.168.79.99/24 dev enp0s9 label enp0s9:0
 
 
