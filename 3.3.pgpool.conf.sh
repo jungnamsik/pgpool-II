@@ -23,7 +23,7 @@ elif [ "${NODE_NAME}" = "pg03" ]; then
     OTHER_HOST2="pg02"
 fi
 
-VIP="192.168.79.98"
+VIP="192.168.79.99"
 CONFIG_FILE=/etc/pgpool-II/pgpool.conf
 cat <<EOF > $CONFIG_FILE
 listen_addresses = '*'

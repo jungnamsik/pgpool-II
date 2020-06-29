@@ -16,7 +16,7 @@ echo "[ -f /etc/profile ] && source /etc/profile" >> /home/postgres/.bashrc
 echo "export PGDATA=/u01/pg${MAJORVER}/data" >> /home/postgres/.bashrc
 echo "export PGVER=${MAJORVER}" >> /home/postgres/.bashrc
 
-
+echo "Directory, path, Success!!"
 #CHK_SOURCE="[ -f /etc/profile ] && source /etc/profile"
 #CHK_PGDATA="export PGDATA=/u01/pg${MAJORVER}/data"
 #CHK_PGVER="export PGVER=${MAJORVER}"
