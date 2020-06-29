@@ -1,0 +1,4 @@
+[ -f /etc/profile ] && source /etc/profile
+export PGDATA=/u01/pg12/data
+export PGVER=12
+abcd1234
